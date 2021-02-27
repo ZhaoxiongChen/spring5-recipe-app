@@ -10,6 +10,7 @@ public class UnitOfMeasure {
     private Long id;
 
     // Ingredient - UnitOfMeasure: 1 - 1, but cannot use @OneToOne here
+    // Error: 'One To One' attribute type should not be 'String'
     private String uom; // UnitOfMeasure property: string
 
     public Long getId() {
