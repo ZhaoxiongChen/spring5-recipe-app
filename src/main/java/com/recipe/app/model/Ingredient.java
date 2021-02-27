@@ -14,7 +14,8 @@ public class Ingredient {
 
     private BigDecimal amount;
 
-    // private UnitOfMeasure uom;
+    @OneToOne(fetch = FetchType.EAGER) // EAGER mode for uom
+    private UnitOfMeasure uom;
 
     @ManyToOne
     private Recipe recipe;
